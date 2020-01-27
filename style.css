@@ -1,0 +1,41 @@
+* {
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  font-size: 2em;
+  background-color: purple;
+  color: wheat;
+}
+
+button {
+  font-size: 1.3em;
+  border-radius: 20px;
+  background-color: teal;
+  color: wheat;
+  padding: 5px 15px;
+  margin-right: 100px;
+}
+#start_game {
+  margin-top: 20px;
+  text-align: center;
+}
+.score {
+  font-size: 1.3em;
+}
+#question_result {
+  font-size: 1em;
+}
+
+#question,
+#score_div {
+  display: none;
+}
+.hint{
+  cursor: help;
+}
+.hint:hover{
+  color: purple;
+}

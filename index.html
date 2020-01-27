@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Name: Shuwen Wang
+Student Number: 991583096
+Campus: Davis -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Questions</title>
+</head>
+
+<body onload="loadQuestion()">
+  <header>Questions About Mars</header>
+  <p>Grab your space suit and prepare for liftoff—you’re ready to explore Mars! Show off your space smarts with this
+    quiz.
+  </p>
+  <div id="start_game">
+    <button onclick="newGame()">Start Game</button>
+  </div>
+
+  <div id="question">
+    <fieldset id="question1">
+      <legend>Question <span id="question_id"></span></legend>
+      <p id="title_p" onmouseover="getHint(1)" class="hint">What is the biggest one</p>
+      <input type="radio" value="1" name="option" id="option1">
+      <label for="option1" id="option1_label"></label><br>
+      <input type="radio" value="1" name="option" id="option2">
+      <label for="option2" id="option2_label"></label><br>
+      <input type="radio" value="1" name="option" id="option3">
+      <label for="option3" id="option3_label"></label><br>
+      <input type="radio" value="1" name="option" id="option4">
+      <label for="option4" id="option4_label"></label><br>
+    </fieldset>
+
+    <button onclick="submitQuestion()" onmouseover="getHint(2)" class="hint">Next</button>
+    <button onclick="newGame()" onmouseover="getHint(3)" class="hint">New Game</button>
+  </div>
+
+  <div id="score_div">
+    <span onmouseover="getHint(4)" class="hint">Your Score:&nbsp;</span><span id="score">0</span><br>
+    <span id="question_result"></span>
+  </div>
+
+  <footer>
+    <p id="hint"></p>
+  </footer>
+
+  <script src="question.js"></script>
+</body>
+
+</html>
